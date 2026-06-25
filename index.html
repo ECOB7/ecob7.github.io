@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfólio de Enzo Cristopher Oliveira Bittencourt, estudante de Engenharia de Software com foco em Python, dados, web e inteligência artificial.">
+    <meta property="og:title" content="Enzo Cristopher Oliveira Bittencourt | Portfólio">
+    <meta property="og:description" content="Projetos, habilidades técnicas, cursos e contato profissional.">
+    <meta property="og:image" content="assets/portfolio-hero.png">
+    <title>Enzo Cristopher Oliveira Bittencourt | Portfólio</title>
+    <link rel="stylesheet" href="styles.css?v=4">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="brand" href="#top" aria-label="Voltar ao início">
+          <span class="brand-mark" id="brandInitials">EB</span>
+          <span id="brandName">Enzo Bittencourt</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="site-menu">
+          <a href="#projetos">Projetos</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#idiomas">Idiomas</a>
+          <a href="#trajetoria">Trajetória</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow" id="availability">Disponível para oportunidades de estágio e júnior</p>
+          <h1 id="hero-title">Estudante de Engenharia de Software com foco em Python, Dados, Web e Inteligência Artificial</h1>
+          <p class="hero-lede" id="heroIntro">
+            Estudante de Engenharia de Software com formação técnica e experiência internacional em Luxemburgo. Desenvolvo projetos acadêmicos em web, APIs, visão computacional e bancos de dados, com interesse em Python, dados e IA aplicada.
+          </p>
+
+          <div class="hero-actions" aria-label="Ações principais">
+            <a class="button button-primary" href="#projetos">
+              Ver projetos
+              <span aria-hidden="true">-&gt;</span>
+            </a>
+            <a class="button button-secondary" id="emailCta" href="#contato">Copiar e-mail</a>
+          </div>
+
+          <dl class="hero-meta" aria-label="Resumo rápido">
+            <div>
+              <dt>Foco</dt>
+              <dd id="focusArea">Python, web, dados e IA</dd>
+            </div>
+            <div>
+              <dt>Busca</dt>
+              <dd id="jobTarget">Júnior ou estágio</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-media" aria-label="Visual do portfolio">
+          <img src="assets/portfolio-hero.png" alt="Mesa de trabalho moderna com laptop, painéis de interface e cartões de projeto" width="1536" height="1024">
+        </div>
+      </section>
+
+      <section class="snapshot" aria-labelledby="snapshot-title">
+        <div class="section-heading">
+          <p class="section-kicker">Destaques</p>
+          <h2 id="snapshot-title">Conhecimentos e Projetos.</h2>
+        </div>
+        <div class="snapshot-grid" id="factsList"></div>
+      </section>
+
+      <section class="section" id="projetos" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="section-kicker">Projetos</p>
+          <h2 id="projects-title">Projetos acadêmicos e pessoais com foco em web, dados e automação.</h2>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+
+      <section class="section" id="experiencia" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="section-kicker">Experiência</p>
+          <h2 id="experience-title">Vivência profissional</h2>
+        </div>
+        <div class="experience-grid" id="experienceGrid"></div>
+      </section>
+
+      <section class="section section-band" id="habilidades" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="section-kicker">Habilidades</p>
+          <h2 id="skills-title">Linguagens, ferramentas e tecnologias.</h2>
+        </div>
+        <div class="skills-layout">
+          <div>
+            <div class="skills-grid" id="skillsGrid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="idiomas" aria-labelledby="languages-title">
+        <div class="section-heading">
+          <p class="section-kicker">Idiomas</p>
+          <h2 id="languages-title">Idiomas que uso para estudo, comunicação e tecnologia.</h2>
+        </div>
+        <div class="language-grid" id="languageGrid"></div>
+      </section>
+
+      <section class="section" id="trajetoria" aria-labelledby="timeline-title">
+        <div class="section-heading">
+          <p class="section-kicker">Trajetória</p>
+          <h2 id="timeline-title">Experiências e estudos</h2>
+        </div>
+        <div class="timeline" id="timelineList"></div>
+      </section>
+
+      <section class="contact" id="contato" aria-labelledby="contact-title">
+        <div>
+          <p class="section-kicker">Contato</p>
+          <h2 id="contact-title">Vamos conversar?</h2>
+          <p id="contactText">Estou aberto a oportunidades de estágio e projetos na área de tecnologia, principalmente em desenvolvimento web, dados, automação, suporte técnico e aplicações com Python.</p>
+          <p class="contact-status" id="contactStatus" role="status" aria-live="polite"></p>
+        </div>
+        <div class="contact-actions" id="contactLinks"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Feito por <span id="footerName">Enzo Cristopher Oliveira Bittencourt</span> <span id="year"></span>.</p>
+    </footer>
+
+    <script src="script.js?v=6"></script>
+  </body>
+</html>
